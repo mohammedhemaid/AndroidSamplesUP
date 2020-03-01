@@ -1,0 +1,52 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/image_food"
+        android:layout_width="150dp"
+        android:layout_height="105dp"
+        android:src="@drawable/image_food"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/food_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Food"
+        android:layout_toEndOf="@id/image_food"
+        android:padding="16dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:layout_toEndOf="@id/image_food"
+        android:layout_below="@id/food_title"
+        android:padding="16dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/image_food"
+        android:background="#000"
+        android:layout_marginTop="16dp"
+        />
+
+    <Button
+        android:id="@+id/navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="navigate"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
